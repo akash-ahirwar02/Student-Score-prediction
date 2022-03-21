@@ -1,0 +1,9 @@
+python== 3.8
+scikit-learn==0.23.1
+sklearn==0.0
+Flask==1.1.2
+requests==2.24.0
+joblib==0.15.1
+pickle==0.15.1
+numpy==1.19.0
+pandas==1.19.0
