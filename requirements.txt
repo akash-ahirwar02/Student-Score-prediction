@@ -1,9 +1,19 @@
-python== 3.8
 scikit-learn==0.23.1
 sklearn==0.0
 Flask==1.1.2
 requests==2.24.0
 joblib==0.15.1
-pickle==0.15.1
 numpy==1.19.0
-pandas==1.19.0
+pandas==1.4.1
+click==7.1
+itsdangerous==1.1.0
+gunicorn==20.0.4
+pickle-mixin==1.0.2
+gunicorn==20.0.4
+itsdangerous==1.1.0
+pytz==2020.1
+MarkupSafe==1.1.1
+python-dateutil==2.8.1
+six==1.15.0
+threadpoolctl==2.1.0
+Werkzeug==1.0.1
