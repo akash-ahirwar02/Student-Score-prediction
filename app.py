@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 model = joblib.load("student_mark_predictor.pkl")
 
-df = pd.DataFrame()
+
 
 @app.route('/')
 def home():
@@ -30,10 +30,6 @@ def predict():
 
     output = model.predict([features_value])[0][0].round(2)
 
-    # input and predicted value store in df then save in csv file
-    df= pd.concat([df,pd.DataFrame({'Study Hours':input_features,'Predicted Output':[output]})],ignore_index=True)
-    print(df)   
-    df.to_csv('smp_data_from_app.csv')
 
     return render_template('index.html', prediction_text='You will get {}% marks, when you study {} hours per day '.format(output, int(features_value[0])))
 
